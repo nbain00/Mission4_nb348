@@ -1,0 +1,10 @@
+﻿.basic {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.basic-item {
+    width: 800px;
+    text-align: center;
+}
