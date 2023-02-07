@@ -1,0 +1,24 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Mission4_nb348.Models.GradeCalcModel
+
+<div style="margin-top:120px; margin-left:200px">
+    <form method="post">
+        <label for="assignments">Assignments:</label>
+        <input id="numAssign" type="number" asp-for="Assignments" value="" /><br />
+        <label for="quizzes">Quizzes:</label>
+        <input id="numQuiz" type="number" asp-for="Quizzes" value="" /><br />
+        <label for="group">Group Projects:</label>
+        <input id="numGroup" type="number" asp-for="Group" value="" /><br />
+        <label for="intex">INTEX:</label>
+        <input id="numIntex" type="number" asp-for="Intex" value="" /><br />
+        <label for="exam">Exams:</label>
+        <input id="numExam" type="number" asp-for="Exam" value="" /><br />
+        <input id="btnGrades" type="submit" name="grades" value="Calculate" />
+
+        <div asp-validation-summary="All"></div>
+    </form>
+</div>
